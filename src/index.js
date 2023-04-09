@@ -1,6 +1,7 @@
 function mensagem() {
     var nome = document.getElementById("username").value;
     alert("Bem Vindo, " + nome);
+    nome.indexOf("Bem Vindo");
   }
   
   //Botao iniciar
