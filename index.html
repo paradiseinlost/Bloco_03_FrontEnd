@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +8,49 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
-  <body>
-    <img id="planoFundo" src="src/img/planodefundo.jpg"
-    
-    <br>
-    <h1><b> Quizz Broklyn 99</b></h1>
+<body>
+  <img id="planoFundo" src="src/img/planodefundo.jpeg"
 
-    <div class="pergunta">
-      <p> 1) Quantas temporadas há na série?</p>
-        <input type="radio" name="grupopergunta1" value="a"> A) 4 temporadas </input>
-        <input type="radio" name="grupopergunta1" value="b"> B) 8 temporadas </input>
-        <input type="radio" name="grupopergunta1" value="c"> C) 12 temporadas </input>
-        <br>
+  <h1><b> Quizz Broklyn 99</b></h1>
+
+  <form name="text" method="GET">
+    <div>
+      <input type="text" id="username" name="textoEntrada" placeholder="Digite seu nome">
+      <button type="button" onclick="mensagem()";> Clique aqui para iniciar o Quizz </butoon>
     </div>
-    
-    <div class="pergunta">
-      <p> 2) Qual  Personagem feminina é mais reservada?</p>
-        <input type="radio" name="grupopergunta2" value="a"> A) Gina</input>
-        <input type="radio" name="grupopergunta2" value="b"> B) Rosa </input>
-        <input type="radio" name="grupopergunta2" value="c"> C) Amy </input>
-        <br>
-    </div>
+  </form>
+
+  <div class="pergunta">
+    <p> 1) Quantas temporadas há na série?</p>
+      <input type="radio" name="grupopergunta1" value="a"> A) 4 temporadas </input>
+      <input type="radio" name="grupopergunta1" value="b"> B) 8 temporadas </input>
+      <input type="radio" name="grupopergunta1" value="c"> C) 12 temporadas </input>
+      <br>
+      <button type="button" id="resposta1" onclick="verResultado1()";>Ver Resultados</button>
+  </div>
   
-    <div class="pergunta">
-      <p> 3) Qual o nome do cachorro do capitão Holt?</p>
-        <input type="radio"name="grupopergunta3" value="a"> A) Cheddar</input>
-        <input type="radio"name="grupopergunta3" value="b"> B) Maionese </input>
-        <input type="radio"name="grupopergunta3" value="c"> C) Catupiry </input>
-        <br>
-    </div>
-    <br>
+  <div class="pergunta">
+    <p> 2) Qual  Personagem feminina é mais reservada?</p>
+      <input type="radio" name="grupopergunta2" value="a"> A) Gina</input>
+      <input type="radio" name="grupopergunta2" value="b"> B) Rosa </input>
+      <input type="radio" name="grupopergunta2" value="c"> C) Amy </input>
+      <br>
+      <button type="button"id="resposta2" onclick="verResultado2()";>Ver Resultados</button>
+  </div>
+
+  <div class="pergunta">
+    <p> 3) Qual o nome do cachorro do capitão Holt?</p>
+      <input type="radio"name="grupopergunta3" value="a"> A) Cheddar</input>
+      <input type="radio"name="grupopergunta3" value="b"> B) Maionese </input>
+      <input type="radio"name="grupopergunta3" value="c"> C) Catupiry </input>
+      <br>
+      <button type="button" id="resposta3" onclick="verResultado3()";>Ver Resultados</button>
+  </div>
+ 
     <div >
     <a href="/resultados.html"><button class="button"> Clique para ver as respostas!</button></a> 
 
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
